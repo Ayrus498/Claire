@@ -7,6 +7,7 @@ import csv
 from datetime import datetime
 import os
 
+<<<<<<< HEAD
 
 def FolderCheck(dirName):
 	if not os.path.exists(dirName):
@@ -28,6 +29,17 @@ FolderCheck('Model')
 FolderCheck('Graphs')
 ########## ANN Framework Structure ###################
 now = datetime.now()
+=======
+now = datetime.now()
+
+######### Hyper Parameters ##############
+Data_File="16_Mar_Dataset_3"
+Iteration_Value=10000
+test_Iteration=1000
+#########################################
+Generic_Folder="%d-%m-%Y_at_%H-%M-%S_"+Data_File
+########## ANN Framework Structure ###################
+>>>>>>> 4640e0609497406078af0bb2df556812e0ce19cf
 Source_Data="Data\\"+Data_File+".csv"
 Log_File = now.strftime("Training_Log\\"+Generic_Folder+"_Training_Log.csv")
 Train_Test=now.strftime("Train_Test\\"+Generic_Folder)
@@ -43,9 +55,12 @@ global TP_Class_1_Cal_Accuracy
 TP_Class_0_Cal_Accuracy=0
 TP_Class_1_Cal_Accuracy=0
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 4640e0609497406078af0bb2df556812e0ce19cf
 class NeuralNetwork():
 
     def __init__(self):
@@ -200,7 +215,11 @@ class NeuralNetwork():
         return output
 
 if __name__=="__main__":
+<<<<<<< HEAD
 	HyperParameters()
+=======
+
+>>>>>>> 4640e0609497406078af0bb2df556812e0ce19cf
     neural_network = NeuralNetwork()
 
     print("Random synaptic weigts:")
