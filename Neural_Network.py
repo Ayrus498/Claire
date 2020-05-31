@@ -209,10 +209,8 @@ class NeuralNetwork():
 
 if __name__=="__main__":
 
-<<<<<<< HEAD
 	HyperParameters()
-=======
->>>>>>> e6a44c9f91b2abc9dfcc034e3a0e48f68d99237a
+
     neural_network = NeuralNetwork()
 
     print("Random synaptic weigts:")
