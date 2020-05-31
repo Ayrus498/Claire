@@ -14,10 +14,10 @@ def FolderCheck(dirName):
 
 def HyperParameters():
 	######### Hyper Parameters ##############
-	Data_File="16_Mar_Dataset_3"
 	Iteration_Value=10000
 	test_Iteration=1000
 
+Data_File="Sample"
 #########################################
 Generic_Folder="%d-%m-%Y_at_%H-%M-%S_"+Data_File
 #########################################
@@ -26,19 +26,11 @@ FolderCheck('Training_Log')
 FolderCheck('Train_Test')
 FolderCheck('Model')
 FolderCheck('Graphs')
-########## ANN Framework Structure ###################
-now = datetime.now()
-=======
-now = datetime.now()
-
-######### Hyper Parameters ##############
-Data_File="16_Mar_Dataset_3"
-Iteration_Value=10000
-test_Iteration=1000
 #########################################
 Generic_Folder="%d-%m-%Y_at_%H-%M-%S_"+Data_File
 ########## ANN Framework Structure ###################
-Source_Data="Data\\"+Data_File+".csv"
+now = datetime.now()
+Source_Data="Data//"+Data_File+".csv"
 Log_File = now.strftime("Training_Log\\"+Generic_Folder+"_Training_Log.csv")
 Train_Test=now.strftime("Train_Test\\"+Generic_Folder)
 os.mkdir(Train_Test)
@@ -209,8 +201,7 @@ class NeuralNetwork():
 
 if __name__=="__main__":
 
-	HyperParameters()
-
+    HyperParameters()
     neural_network = NeuralNetwork()
 
     print("Random synaptic weigts:")
